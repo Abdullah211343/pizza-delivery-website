@@ -1,0 +1,497 @@
+/* ==========================================================================
+   2026 MODERN PIZZA EXPERIENCE - COMPREHENSIVE RESPONSIVE STYLES
+   Optimized for Desktops, Tablets, Mobile (425px), and Small Screens (320px)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Large Devices / Desktops (<= 1199.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199.98px) {
+    .floating-badge.badge-top {
+        left: 0;
+    }
+    .floating-badge.badge-bottom {
+        right: 0;
+    }
+    .hero-main-img {
+        width: 380px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Tablets / Medium Screens (<= 991.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+    .navigation-wrap {
+        background: var(--surface-1);
+        padding: 0.85rem 0;
+        border-bottom: 1px solid var(--glass-border);
+    }
+    
+    .navbar-collapse {
+        background: var(--surface-2);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-lg);
+        padding: 1.5rem;
+        margin-top: 1rem;
+    }
+    
+    .navbar-nav .nav-item {
+        padding: 0.4rem 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.6rem 1rem !important;
+    }
+
+    .hero-section {
+        padding-top: 7rem;
+        padding-bottom: 3.5rem;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin-bottom: 2.5rem;
+    }
+
+    .hero-desc {
+        margin: 0 auto 1.75rem;
+    }
+
+    .hero-cta-group {
+        justify-content: center;
+    }
+
+    .hero-stats-row {
+        justify-content: center;
+    }
+
+    .hero-image-wrapper {
+        margin-top: 1.5rem;
+    }
+
+    .hero-main-img {
+        width: min(380px, 80vw);
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .about-story-text {
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    .feature-pill-list {
+        text-align: left;
+    }
+
+    .promo-banner-card {
+        padding: 2.5rem 1.5rem;
+        text-align: center;
+    }
+
+    .promo-content {
+        margin-bottom: 2rem;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Landscape & Large Phones (<= 767.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding-top: 6.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .hero-stats-row {
+        display: flex;
+        justify-content: space-around;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .floating-badge {
+        display: none; /* Hide floating badges on smaller screens for clean layout */
+    }
+
+    .hero-main-img {
+        width: min(340px, 80vw);
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .category-chip {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
+
+    .menu-section {
+        padding: 4rem 0;
+    }
+
+    .menu-filter-bar {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 0.45rem 1rem;
+        font-size: 0.82rem;
+    }
+
+    .food-img-holder {
+        height: 200px;
+    }
+
+    .about-section {
+        padding: 4.5rem 0;
+    }
+
+    .testimonial-section {
+        padding: 4.5rem 0;
+    }
+
+    .cart-drawer {
+        max-width: 100%;
+    }
+
+    .size-selector-group,
+    .crust-selector-group {
+        grid-template-columns: 1fr;
+    }
+
+    .toppings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-section {
+        padding-top: 3.5rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 2.5rem;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Phones (<= 575.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 575.98px) {
+    .hero-section {
+        padding-top: 6rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .hero-delivery-badge {
+        padding: 6px 14px;
+        font-size: 0.8rem;
+    }
+
+    .hero-title {
+        font-size: 1.85rem;
+        line-height: 1.25;
+    }
+
+    .hero-desc {
+        font-size: 0.95rem;
+        line-height: 1.55;
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .hero-cta-group .main-btn,
+    .hero-cta-group .btn-glass {
+        width: 100%;
+        padding: 0.85rem 1.25rem;
+    }
+
+    .hero-stats-row {
+        padding-top: 1.25rem;
+        gap: 12px;
+    }
+
+    .stat-item h4 {
+        font-size: 1.35rem;
+    }
+
+    .stat-item p {
+        font-size: 0.78rem;
+    }
+
+    .hero-main-img {
+        width: min(300px, 78vw);
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .category-chip {
+        padding: 9px 8px;
+        font-size: 0.8rem;
+        gap: 6px;
+    }
+
+    .category-chip i,
+    .category-chip img {
+        font-size: 0.9rem;
+    }
+
+    .food-card {
+        padding: 1.1rem;
+    }
+
+    .food-img-holder {
+        height: 190px;
+    }
+
+    .food-card-footer {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    .food-price {
+        text-align: center;
+    }
+
+    .food-actions {
+        width: 100%;
+    }
+
+    .food-actions .main-btn {
+        flex-grow: 1;
+    }
+
+    .story-card {
+        border-radius: var(--radius-lg);
+    }
+
+    .promo-banner-card {
+        padding: 2rem 1.25rem;
+        border-radius: var(--radius-lg);
+    }
+
+    .promo-banner-card h2 {
+        font-size: 1.6rem;
+    }
+
+    .coupon-code-box {
+        width: 100%;
+        justify-content: center;
+        padding: 8px 12px;
+    }
+
+    .review-glass-card {
+        padding: 2rem 1.25rem;
+    }
+
+    .review-quote {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Standard Mobile Screens (<= 425px) - Addresses 425px Issue
+   -------------------------------------------------------------------------- */
+@media (max-width: 425px) {
+    .brand-text {
+        font-size: 1.25rem;
+    }
+
+    .hero-section {
+        padding-top: 5.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .hero-delivery-badge {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-title {
+        font-size: 1.65rem;
+        margin-bottom: 0.85rem;
+    }
+
+    .hero-desc {
+        font-size: 0.88rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Fixed 1:1 round circular sizing for hero pizza image */
+    .hero-main-img {
+        width: min(270px, 76vw) !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1 !important;
+        max-width: 100%;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+
+    .hero-stats-row {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        gap: 8px;
+    }
+
+    .stat-item h4 {
+        font-size: 1.2rem;
+    }
+
+    .stat-item p {
+        font-size: 0.72rem;
+    }
+
+    /* Category chips fit neatly in 2 columns */
+    .category-chip {
+        padding: 8px 6px;
+        font-size: 0.78rem;
+        gap: 5px;
+        border-radius: var(--radius-md);
+    }
+
+    .category-chip i {
+        font-size: 0.85rem;
+    }
+
+    .category-chip span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .food-card {
+        padding: 1rem;
+    }
+
+    .food-img-holder {
+        height: 180px;
+    }
+
+    .food-title {
+        font-size: 1.12rem;
+    }
+
+    .food-desc {
+        font-size: 0.82rem;
+        margin-bottom: 1rem;
+    }
+
+    .promo-banner-card {
+        padding: 1.75rem 1rem;
+    }
+
+    .promo-banner-card h2 {
+        font-size: 1.45rem;
+    }
+
+    .coupon-code-box span {
+        font-size: 0.95rem;
+        letter-spacing: 0.05em;
+    }
+
+    .btn-copy-code {
+        font-size: 0.8rem;
+    }
+
+    .review-glass-card::before {
+        font-size: 4rem;
+        top: 5px;
+        left: 15px;
+    }
+
+    .reviewer-avatar {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Extra Small / Compact Mobile Screens (<= 340px) - Addresses 320px Issue
+   -------------------------------------------------------------------------- */
+@media (max-width: 340px) {
+    .hero-section {
+        padding-top: 5rem;
+        padding-bottom: 1.75rem;
+    }
+
+    .hero-title {
+        font-size: 1.45rem;
+        line-height: 1.2;
+    }
+
+    .hero-desc {
+        font-size: 0.82rem;
+        line-height: 1.45;
+    }
+
+    /* Strict 1:1 circular ratio on 320px screens - No Oval Stretching! */
+    .hero-main-img {
+        width: 230px !important;
+        height: 230px !important;
+        aspect-ratio: 1 / 1 !important;
+        max-width: 90% !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+    }
+
+    .hero-stats-row {
+        gap: 6px;
+    }
+
+    .stat-item h4 {
+        font-size: 1.05rem;
+    }
+
+    .stat-item p {
+        font-size: 0.68rem;
+    }
+
+    .category-chip {
+        padding: 7px 4px;
+        font-size: 0.72rem;
+        gap: 4px;
+    }
+
+    .category-chip i {
+        font-size: 0.78rem;
+    }
+
+    .food-card {
+        padding: 0.85rem;
+    }
+
+    .food-img-holder {
+        height: 160px;
+    }
+
+    .food-title {
+        font-size: 1.05rem;
+    }
+
+    .food-price {
+        font-size: 1.15rem;
+    }
+
+    .modal-header.dark-modal-header,
+    .modal-body.dark-modal-body,
+    .modal-footer.dark-modal-footer {
+        padding: 1rem;
+    }
+
+    .cart-header,
+    .cart-items-body,
+    .cart-footer {
+        padding: 1rem;
+    }
+}

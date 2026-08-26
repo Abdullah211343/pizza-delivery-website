@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SliceCraft | Gourmet Artisan Pizza & Fast Delivery</title>
+  <meta name="description" content="Order fresh hand-tossed artisan pizzas with premium toppings. Hot and fast delivery in 25 minutes.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap 5.3.3 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="Pizza.css">
+  <link rel="stylesheet" href="ResponsivePizza.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100">
+
+  <!-- ==========================================
+       Header / Navbar (Glassmorphic)
+       ========================================== -->
+  <header>
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navigation-wrap">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="SliceCraft Logo">
+          <span class="brand-text">Slice<span>Craft</span></span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#deals">Special Deals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Reviews</a>
+            </li>
+          </ul>
+
+          <div class="nav-actions ms-lg-4 mt-3 mt-lg-0">
+            <!-- Cart Trigger Button -->
+            <button class="cart-trigger-btn" id="openCartBtn" title="View Cart">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="cart-badge" id="cartCountBadge">0</span>
+            </button>
+
+            <!-- Order Online CTA -->
+            <a href="#menu" class="main-btn btn-sm-action">
+              <span>Order Now</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================
+       Hero Section
+       ========================================== -->
+  <section id="home" class="hero-section">
+    <div class="hero-glow-blob"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Hero Text Content -->
+        <div class="col-lg-6 col-md-12 hero-content">
+          <div class="hero-delivery-badge">
+            <span class="pulse-dot"></span>
+            <span>⚡ Express Hot Delivery in 25 Mins</span>
+          </div>
+
+          <h1 class="hero-title">
+            Authentic Wood-Fired <br>
+            <span class="text-gradient">Artisan Pizzas</span>
+          </h1>
+
+          <p class="hero-desc">
+            Hand-kneaded organic dough fermented for 48 hours, topped with imported San Marzano sauce and melted fior di latte mozzarella.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#menu" class="main-btn">
+              <span>Explore Menu</span>
+              <i class="fas fa-pizza-slice"></i>
+            </a>
+            <a href="#deals" class="main-btn btn-glass">
+              <span>Claim 40% Off Deal</span>
+              <i class="fas fa-fire"></i>
+            </a>
+          </div>
+
+          <!-- Live Stats Row -->
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <h4><span class="counter" data-target="50">0</span>k+</h4>
+              <p>Pizzas Delivered</p>
+            </div>
+            <div class="stat-item">
+              <h4>4.9 ★</h4>
+              <p>15k+ Real Reviews</p>
+            </div>
+            <div class="stat-item">
+              <h4>100%</h4>
+              <p>Organic Ingredients</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="col-lg-6 col-md-12 mt-5 mt-lg-0 hero-image-wrapper">
+          <!-- Floating Feature Badge Top -->
+          <div class="floating-badge badge-top">
+            <div class="badge-icon-box">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="badge-content text-start">
+              <h5>Chef's Choice</h5>
+              <p>Truffle Cheese Crust</p>
+            </div>
+          </div>
+
+          <!-- Hero Main Pizza Image -->
+          <img src="img/hero_pizza_circle.jpg" alt="Delicious Artisan Pizza" class="hero-main-img img-fluid">
+
+          <!-- Floating Feature Badge Bottom -->
+          <div class="floating-badge badge-bottom">
+            <div class="badge-icon-box badge-fire">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="badge-content text-start">
+              <h5>Free Delivery</h5>
+              <p>On orders above $25</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Category Bar
+       ========================================== -->
+  <section class="categories-section">
+    <div class="container">
+      <div class="row g-3 justify-content-center">
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="category-chip active" data-filter="all">
+            <i class="fas fa-utensils"></i>
+            <span>All Items</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="category-chip" data-filter="pizza">
+            <i class="fas fa-pizza-slice"></i>
+            <span>Pizzas</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="category-chip" data-filter="combos">
+            <i class="fas fa-box"></i>
+            <span>Combos</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="category-chip" data-filter="chicken">
+            <i class="fas fa-drumstick-bite"></i>
+            <span>Chicken</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="category-chip" data-filter="sauces">
+            <i class="fas fa-pepper-hot"></i>
+            <span>Dips & Sauces</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="category-chip" data-filter="drinks">
+            <i class="fas fa-wine-glass"></i>
+            <span>Beverages</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Menu / Explore Food Catalog
+       ========================================== -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag">
+          <i class="fas fa-fire"></i> Our Gourmet Selection
+        </div>
+        <h2>Fresh From The <span class="text-gradient">Wood-Fired Oven</span></h2>
+        <p class="section-subtitle">
+          Every pizza is crafted with love, using hand-tossed sourdough and the freshest Italian ingredients.
+        </p>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="row g-4" id="foodCardsGrid">
+        <!-- Item 1: Pepperoni Supreme -->
+        <div class="col-lg-4 col-md-6 food-item-wrapper" data-category="pizza">
+          <div class="food-card">
+            <span class="food-badge-tag badge-popular">Best Seller</span>
+            <div class="food-img-holder">
+              <img src="img/hero_pizza.jpg" alt="Pepperoni Supreme Pizza">
+            </div>
+            <div class="food-info-header">
+              <h4 class="food-title">Pepperoni Supreme</h4>
+              <div class="food-rating">
+                <i class="fas fa-star"></i> 4.9
+              </div>
+            </div>
+            <p class="food-desc">
+              Smoked beef pepperoni slices, rich marinara, layered with molten mozzarella and oregano seasoning.
+            </p>
+            <div class="food-card-footer">
+              <div class="food-price">$14.99 <span>/ Med</span></div>
+              <div class="food-actions">
+                <button class="btn-custom" onclick="openCustomizer('Pepperoni Supreme', 14.99, 'img/hero_pizza.jpg')">
+                  <i class="fas fa-sliders-h"></i>
+                </button>
+                <button class="main-btn btn-sm-action" onclick="quickAddToCart('Pepperoni Supreme', 14.99, 'img/hero_pizza.jpg')">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Truffle Mushroom -->
+        <div class="col-lg-4 col-md-6 food-item-wrapper" data-category="pizza">
+          <div class="food-card">
+            <span class="food-badge-tag badge-chef">Chef Special</span>
+            <div class="food-img-holder">
+              <img src="img/pizza_truffle.jpg" alt="Truffle Mushroom Pizza">
+            </div>
+            <div class="food-info-header">
+              <h4 class="food-title">Truffle Wild Mushroom</h4>
+              <div class="food-rating">
+                <i class="fas fa-star"></i> 5.0
+              </div>
+            </div>
+            <p class="food-desc">
+              Portobello mushrooms, garlic truffle cream, roasted thyme, fior di latte, and parmesan shavings.
+            </p>
+            <div class="food-card-footer">
+              <div class="food-price">$17.50 <span>/ Med</span></div>
+              <div class="food-actions">
+                <button class="btn-custom" onclick="openCustomizer('Truffle Wild Mushroom', 17.50, 'img/pizza_truffle.jpg')">
+                  <i class="fas fa-sliders-h"></i>
+                </button>
+                <button class="main-btn btn-sm-action" onclick="quickAddToCart('Truffle Wild Mushroom', 17.50, 'img/pizza_truffle.jpg')">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Smoky BBQ Chicken -->
+        <div class="col-lg-4 col-md-6 food-item-wrapper" data-category="pizza chicken">
+          <div class="food-card">
+            <span class="food-badge-tag badge-popular">Hot & Spicy</span>
+            <div class="food-img-holder">
+              <img src="img/pizza_bbq.jpg" alt="Smoky BBQ Chicken Pizza">
+            </div>
+            <div class="food-info-header">
+              <h4 class="food-title">Smoky BBQ Chicken</h4>
+              <div class="food-rating">
+                <i class="fas fa-star"></i> 4.8
+              </div>
+            </div>
+            <p class="food-desc">
+              Grilled smoked chicken breast, caramelized red onions, sweet bell peppers, and signature hickory glaze.
+            </p>
+            <div class="food-card-footer">
+              <div class="food-price">$15.99 <span>/ Med</span></div>
+              <div class="food-actions">
+                <button class="btn-custom" onclick="openCustomizer('Smoky BBQ Chicken', 15.99, 'img/pizza_bbq.jpg')">
+                  <i class="fas fa-sliders-h"></i>
+                </button>
+                <button class="main-btn btn-sm-action" onclick="quickAddToCart('Smoky BBQ Chicken', 15.99, 'img/pizza_bbq.jpg')">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Margherita Basilico -->
+        <div class="col-lg-4 col-md-6 food-item-wrapper" data-category="pizza">
+          <div class="food-card">
+            <span class="food-badge-tag badge-veg">Vegetarian</span>
+            <div class="food-img-holder">
+              <img src="img/pizza_margherita.jpg" alt="Margherita Basilico Pizza">
+            </div>
+            <div class="food-info-header">
+              <h4 class="food-title">Margherita Basilico</h4>
+              <div class="food-rating">
+                <i class="fas fa-star"></i> 4.9
+              </div>
+            </div>
+            <p class="food-desc">
+              Classic Italian style: San Marzano crushed tomato sauce, fresh mozzarella balls, basil leaves, extra virgin olive oil.
+            </p>
+            <div class="food-card-footer">
+              <div class="food-price">$12.99 <span>/ Med</span></div>
+              <div class="food-actions">
+                <button class="btn-custom" onclick="openCustomizer('Margherita Basilico', 12.99, 'img/pizza_margherita.jpg')">
+                  <i class="fas fa-sliders-h"></i>
+                </button>
+                <button class="main-btn btn-sm-action" onclick="quickAddToCart('Margherita Basilico', 12.99, 'img/pizza_margherita.jpg')">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Deluxe Burger Combo Feast -->
+        <div class="col-lg-4 col-md-6 food-item-wrapper" data-category="combos">
+          <div class="food-card">
+            <span class="food-badge-tag badge-popular">Super Value</span>
+            <div class="food-img-holder">
+              <img src="img/burger_combo.jpg" alt="Deluxe Burger Combo Feast">
+            </div>
+            <div class="food-info-header">
+              <h4 class="food-title">Deluxe Burger Combo Feast</h4>
+              <div class="food-rating">
+                <i class="fas fa-star"></i> 4.9
+              </div>
+            </div>
+            <p class="food-desc">
+              Double flame-grilled beef burger layered with cheddar cheese, golden crispy french fries, and chilled soft drink.
+            </p>
+            <div class="food-card-footer">
+              <div class="food-price">$15.99 <span>/ Combo</span></div>
+              <div class="food-actions">
+                <button class="main-btn btn-sm-action w-100" onclick="quickAddToCart('Deluxe Burger Combo Feast', 15.99, 'img/burger_combo.jpg')">
+                  <i class="fas fa-shopping-bag"></i> Order Combo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Rustic Farmhouse Pizza -->
+        <div class="col-lg-4 col-md-6 food-item-wrapper" data-category="pizza">
+          <div class="food-card">
+            <span class="food-badge-tag badge-veg">Garden Fresh</span>
+            <div class="food-img-holder">
+              <img src="img/pizza_farmhouse.jpg" alt="Rustic Farmhouse Pizza">
+            </div>
+            <div class="food-info-header">
+              <h4 class="food-title">Rustic Farmhouse Pizza</h4>
+              <div class="food-rating">
+                <i class="fas fa-star"></i> 4.8
+              </div>
+            </div>
+            <p class="food-desc">
+              Stone-baked thin crust with fresh garden bell peppers, sliced black olives, red onions, mushrooms, and mozzarella.
+            </p>
+            <div class="food-card-footer">
+              <div class="food-price">$13.99 <span>/ Med</span></div>
+              <div class="food-actions">
+                <button class="btn-custom" onclick="openCustomizer('Rustic Farmhouse Pizza', 13.99, 'img/pizza_farmhouse.jpg')">
+                  <i class="fas fa-sliders-h"></i>
+                </button>
+                <button class="main-btn btn-sm-action" onclick="quickAddToCart('Rustic Farmhouse Pizza', 13.99, 'img/pizza_farmhouse.jpg')">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       About / Story Section
+       ========================================== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="story-card">
+            <img src="img/story_chef.jpg" alt="Master Pizzaiolo at wood-fired brick oven" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-6 ps-lg-5 about-story-text">
+          <div class="section-tag">
+            <i class="fas fa-heart"></i> Our Passion & Craft
+          </div>
+          <h2>We Craft Every Pizza <br><span class="text-gradient">By Hand With Passion</span></h2>
+          <p>
+            Founded by culinary artisans, SliceCraft is dedicated to preserving authentic Neapolitan traditions while infusing bold modern flavor profiles. We use pure slow-fermented sourdough, mineral water, and premium dairy sourced ethically.
+          </p>
+
+          <div class="feature-pill-list">
+            <div class="feature-pill-item">
+              <div class="pill-check-icon"><i class="fas fa-check"></i></div>
+              <span>48-Hour Natural Sourdough Slow Fermentation</span>
+            </div>
+            <div class="feature-pill-item">
+              <div class="pill-check-icon"><i class="fas fa-check"></i></div>
+              <span>Imported San Marzano Italian Tomato Pulp</span>
+            </div>
+            <div class="feature-pill-item">
+              <div class="pill-check-icon"><i class="fas fa-check"></i></div>
+              <span>Baked at 900°F in High-Heat Stone Ovens</span>
+            </div>
+          </div>
+
+          <a href="#menu" class="main-btn">
+            <span>Discover The Taste</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Special Deals & Coupon Section
+       ========================================== -->
+  <section id="deals" class="promo-section">
+    <div class="container">
+      <div class="promo-banner-card">
+        <div class="row align-items-center">
+          <div class="col-lg-8 promo-content">
+            <div class="section-tag">
+              <i class="fas fa-gift"></i> Weekend Special Offer
+            </div>
+            <h2>Get <span class="text-gradient">40% OFF</span> On Your First Order</h2>
+            <p class="text-muted">
+              Use promo code at checkout to unlock instant discounts and free artisan garlic knots.
+            </p>
+            <div class="coupon-code-box">
+              <span id="promoCodeText">SLICE2026</span>
+              <button class="btn-copy-code" onclick="copyPromoCode()" title="Copy Coupon">
+                <i class="fas fa-copy"></i> Copy Code
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="#menu" class="main-btn">
+              <span>Order With Discount</span>
+              <i class="fas fa-bolt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Testimonials Carousel (Glassmorphic)
+       ========================================== -->
+  <section id="testimonial" class="testimonial-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag">
+          <i class="fas fa-quote-left"></i> Real Customer Love
+        </div>
+        <h2>What Our <span class="text-gradient">Foodies Say</span></h2>
+        <p class="section-subtitle">Rated 4.9/5 by over 15,000+ happy pizza lovers across the city.</p>
+      </div>
+
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="review-glass-card">
+              <img src="review/review-1.jpg" alt="Jonathan Doe" class="reviewer-avatar">
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="review-quote">
+                "Hands down the crispiest crust and the most aromatic truffle pizza I have ever tasted in town. Delivered in under 20 mins smoking hot!"
+              </p>
+              <h5 class="reviewer-name">Jonathan Vance</h5>
+              <span class="reviewer-role">Verified Food Critic</span>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="review-glass-card">
+              <img src="review/review-2.jpg" alt="Sarah Jenkins" class="reviewer-avatar">
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="review-quote">
+                "The BBQ chicken pizza and peri-peri wings combo made our weekend party unforgettable. The customized pizza builder on this site is super smooth!"
+              </p>
+              <h5 class="reviewer-name">Sarah Jenkins</h5>
+              <span class="reviewer-role">Loyal Customer</span>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="review-glass-card">
+              <img src="review/review-1.jpg" alt="Alex Rivera" class="reviewer-avatar">
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="review-quote">
+                "Authentic sourdough texture that is light on the stomach. The cheese pull is incredible. SliceCraft is definitely my go-to weekly craving."
+              </p>
+              <h5 class="reviewer-name">Alex Rivera</h5>
+              <span class="reviewer-role">Verified Customer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Footer Section
+       ========================================== -->
+  <footer id="footer" class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 footer-brand">
+          <a class="navbar-brand d-inline-flex" href="#">
+            <img src="logo.png" alt="SliceCraft Logo" height="40">
+            <span class="brand-text ms-2">Slice<span>Craft</span></span>
+          </a>
+          <p>
+            Artisanal wood-fired pizzas delivered straight from our stone ovens to your doorstep in minutes.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon-btn" title="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#about">Craftsmanship</a></li>
+            <li><a href="#deals">Special Deals</a></li>
+            <li><a href="#testimonial">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading">Operating Hours</h5>
+          <ul class="footer-nav-list">
+            <li>Mon - Thu: 11am - 11pm</li>
+            <li>Fri - Sat: 11am - 1am</li>
+            <li>Sun: 12pm - 11pm</li>
+            <li class="text-gradient fw-bold mt-2">Delivery 24/7 Available</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-heading">Stay In The Loop</h5>
+          <p class="text-muted small">Subscribe to get secret VIP deals and 20% off coupons every Friday.</p>
+          <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+            <div class="newsletter-input-group">
+              <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+              <button class="main-btn" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> SliceCraft Artisan Pizza. All Rights Reserved.</p>
+        <div class="d-flex gap-3">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       Slide-in Cart Drawer
+       ========================================== -->
+  <div class="cart-backdrop" id="cartBackdrop" onclick="toggleCartDrawer(false)"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h4><i class="fas fa-shopping-bag text-gradient"></i> Your Cart (<span id="cartTotalItemsCount">0</span>)</h4>
+      <button class="icon-btn" onclick="toggleCartDrawer(false)"><i class="fas fa-times"></i></button>
+    </div>
+
+    <div class="cart-items-body" id="cartItemsContainer">
+      <!-- Injected by JavaScript -->
+      <div class="cart-empty-state">
+        <i class="fas fa-pizza-slice"></i>
+        <p>Your cart is hungry! Add some delicious slices from our menu.</p>
+        <button class="main-btn btn-sm-action mt-3" onclick="toggleCartDrawer(false)">Browse Menu</button>
+      </div>
+    </div>
+
+    <div class="cart-footer" id="cartFooterSection" style="display: none;">
+      <div class="cart-summary-row">
+        <span>Subtotal</span>
+        <span id="cartSubtotalText">$0.00</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>Delivery Fee</span>
+        <span class="text-success">FREE</span>
+      </div>
+      <div class="cart-summary-total">
+        <span>Total Amount</span>
+        <span id="cartTotalText" class="text-gradient">$0.00</span>
+      </div>
+      <button class="main-btn w-100" onclick="handleCheckout()">
+        <span>Proceed To Checkout</span>
+        <i class="fas fa-lock"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       Pizza Customizer Modal
+       ========================================== -->
+  <div class="modal fade" id="customizerModal" tabindex="-1" aria-labelledby="customizerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content dark-modal">
+        <div class="modal-header dark-modal-header">
+          <h5 class="modal-title" id="customizerModalLabel">
+            <i class="fas fa-sliders-h text-gradient me-2"></i> Customize Pizza
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body dark-modal-body">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <img id="customizerPizzaImg" src="" alt="Pizza Preview" style="width: 70px; height: 70px; object-fit: contain;">
+            <div>
+              <h5 id="customizerPizzaName" class="mb-1 text-white">Pizza Name</h5>
+              <span id="customizerBasePrice" class="text-gradient fw-bold">$0.00</span>
+            </div>
+          </div>
+
+          <!-- Size Selection -->
+          <div class="customizer-section-title">Select Size</div>
+          <div class="size-selector-group">
+            <label class="option-radio-card">
+              <input type="radio" name="pizzaSize" value="Small" data-price="0">
+              <div class="option-box">
+                <span class="option-name">10" Small</span>
+                <span class="option-extra">+$0.00</span>
+              </div>
+            </label>
+            <label class="option-radio-card">
+              <input type="radio" name="pizzaSize" value="Medium" data-price="3" checked>
+              <div class="option-box">
+                <span class="option-name">12" Medium</span>
+                <span class="option-extra">+$3.00</span>
+              </div>
+            </label>
+            <label class="option-radio-card">
+              <input type="radio" name="pizzaSize" value="Large" data-price="6">
+              <div class="option-box">
+                <span class="option-name">14" Large</span>
+                <span class="option-extra">+$6.00</span>
+              </div>
+            </label>
+          </div>
+
+          <!-- Crust Selection -->
+          <div class="customizer-section-title">Choose Crust</div>
+          <div class="crust-selector-group">
+            <label class="option-radio-card">
+              <input type="radio" name="pizzaCrust" value="Thin Crust" data-price="0" checked>
+              <div class="option-box">
+                <span class="option-name">Crisp Thin</span>
+                <span class="option-extra">Standard</span>
+              </div>
+            </label>
+            <label class="option-radio-card">
+              <input type="radio" name="pizzaCrust" value="Cheese Burst" data-price="2.5">
+              <div class="option-box">
+                <span class="option-name">Cheese Burst</span>
+                <span class="option-extra">+$2.50</span>
+              </div>
+            </label>
+            <label class="option-radio-card">
+              <input type="radio" name="pizzaCrust" value="Garlic Stuffed" data-price="2.0">
+              <div class="option-box">
+                <span class="option-name">Garlic Herb</span>
+                <span class="option-extra">+$2.00</span>
+              </div>
+            </label>
+          </div>
+
+          <!-- Extra Toppings -->
+          <div class="customizer-section-title">Extra Toppings (+$1.50 each)</div>
+          <div class="toppings-grid">
+            <label class="topping-checkbox-card">
+              <span>Extra Mozzarella</span>
+              <input type="checkbox" name="extraTopping" value="Extra Mozzarella" data-price="1.5">
+            </label>
+            <label class="topping-checkbox-card">
+              <span>Jalapeno Slices</span>
+              <input type="checkbox" name="extraTopping" value="Jalapenos" data-price="1.5">
+            </label>
+            <label class="topping-checkbox-card">
+              <span>Wild Mushrooms</span>
+              <input type="checkbox" name="extraTopping" value="Mushrooms" data-price="1.5">
+            </label>
+            <label class="topping-checkbox-card">
+              <span>Black Olives</span>
+              <input type="checkbox" name="extraTopping" value="Black Olives" data-price="1.5">
+            </label>
+          </div>
+        </div>
+
+        <div class="modal-footer dark-modal-footer">
+          <div>
+            <span class="small text-muted d-block">Calculated Total</span>
+            <h4 id="customizerCalculatedTotal" class="text-white mb-0">$17.99</h4>
+          </div>
+          <button type="button" class="main-btn" onclick="saveCustomizedPizzaToCart()">
+            <i class="fas fa-plus"></i> Add Customized Pizza
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       Toast Notification Container
+       ========================================== -->
+  <div class="toast-container-custom" id="toastContainer"></div>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom App JavaScript -->
+  <script src="javascript.js"></script>
+</body>
+
+</html>
