@@ -1,51 +1,74 @@
-﻿# Crust & Craft — Pizza Delivery & Restaurant Website
+<div align="center">
 
-![HTML5](https://img.shields.io/badge/HTML5-2563EB?style=for-the-badge&logo=code&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-2563EB?style=for-the-badge&logo=code&logoColor=white) ![Food-Delivery](https://img.shields.io/badge/Food-Delivery-2563EB?style=for-the-badge&logo=code&logoColor=white) ![Restaurant-Website](https://img.shields.io/badge/Restaurant-Website-2563EB?style=for-the-badge&logo=code&logoColor=white) ![Web-Design](https://img.shields.io/badge/Web-Design-2563EB?style=for-the-badge&logo=code&logoColor=white) ![Responsive](https://img.shields.io/badge/Responsive-2563EB?style=for-the-badge&logo=code&logoColor=white)
+# 🍕 SliceCraft — Modern Pizza & Food Delivery Web UI
 
-> **An appetizing, vibrant, and interactive restaurant web UI tailored for pizzerias, fast-food diners, and online food delivery businesses.**
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Responsive](https://img.shields.io/badge/Responsive-Design-22C55E?style=for-the-badge&logo=responsive)
+![Dark-Theme](https://img.shields.io/badge/Theme-Dark--Mode-000000?style=for-the-badge)
+
+> **An appetizing, vibrant, and interactive restaurant web UI tailored for gourmet pizzerias, fast-food diners, and online food ordering.**
+
+<br>
+
+<!-- LIVE WEBSITE DEMO ANIMATION -->
+<kbd>
+  <img src="pizza-demo.gif" width="100%" alt="SliceCraft Interactive Website Demo" style="border-radius: 10px;">
+</kbd>
+
+<br><br>
+
+</div>
 
 ---
 
-![Crust & Craft — Pizza Delivery & Restaurant Website](bg/bg-1.jpg)
-
-
 ## ✨ Key Highlights & Features
 
-- ✅ **Appetizing Hero Section with Dynamic Food Presentation**
-- ✅ **Category-based Food & Pizza Menu Grid**
-- ✅ **Special Deals & Combo Offers Section**
-- ✅ **Customer Reviews & Rating Cards**
-- ✅ **Responsive CSS structure for mobile food ordering experience**
+- 🍕 **Dynamic Gourmet Menu:** Interactive categories including Pizzas, Combos, Chicken, Dips, and Beverages.
+- 🛠️ **Interactive Pizza Customizer Modal:** Choose custom crusts (*Crisp Thin, Cheese Burst, Garlic Herb*), select sizes (*10", 12", 14"*), and add extra toppings with real-time price calculation.
+- 🔥 **Wood-Fired Oven Showcase:** High-resolution appetizing presentation of best sellers and chef specials.
+- 🛒 **Real-Time Cart Integration:** Seamless addition of customized food items with counter indicators.
+- ⭐ **Customer Reviews & Social Proof:** Interactive testimonials and customer rating sections.
+- 📱 **Fully Responsive Layout:** Optimized for desktop, tablet, and mobile screens.
 
 ---
 
 ## 🛠️ Tech Stack & Architecture
 
-- **Markup:** HTML5 Semantic Structure
+- **Markup:** HTML5 Semantic Architecture
 - **Styling:** Custom Modular CSS3 (Responsive Breakpoints, Flexbox & CSS Grid)
-- **Icons & Fonts:** FontAwesome / Google Fonts Typography
-- **Design Paradigm:** Mobile-First, Fast Loading, Pixel-Perfect Layout
+- **Interactivity:** Custom JavaScript for customization modals, item selection, and cart flow
+- **Theme:** Dark gourmet UI palette with vibrant accent highlights
 
 ---
 
 ## 🚀 How to View Locally
 
-1. Clone or download this repository:
-   ``bash
+1. **Clone the repository:**
+   ```bash
    git clone https://github.com/Abdullah211343/pizza-delivery-website.git
-   ``
-2. Navigate to the project directory:
-   ``bash
+   ```
+
+2. **Navigate to the project directory:**
+   ```bash
    cd pizza-delivery-website
-   ``
-3. Open index.html directly in any web browser (Chrome, Edge, Firefox, Safari).
+   ```
+
+3. **Open `index.html`** directly in your preferred web browser:
+   ```bash
+   start index.html   # On Windows
+   ```
 
 ---
 
 ## 🔒 Copyright & Rights Notice
 
-This project template and its design layout are created for **portfolio showcase and presentation purposes**.  
-All design assets, layout compositions, and brand marks are the intellectual property of **[Abdullah](https://github.com/Abdullah211343)**.
+This project and its design layout are crafted for **portfolio showcase and presentation purposes**.  
+All design assets, compositions, and brand presentation are the work of **[Abdullah](https://github.com/Abdullah211343)**.
 
 ---
-*Crafted with passion by **[Abdullah211343](https://github.com/Abdullah211343)***
+
+<div align="center">
+  <sub>Crafted with passion by <b><a href="https://github.com/Abdullah211343">Abdullah211343</a></b></sub>
+</div>
