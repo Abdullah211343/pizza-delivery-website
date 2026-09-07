@@ -14,7 +14,7 @@
 
 <!-- LIVE WEBSITE DEMO ANIMATION -->
 <kbd>
-<img src="pizza-demo.gif.gif" width="100%" alt="SliceCraft Interactive Website Demo" style="border-radius: 15px;">
+<img src="demo.gif" width="100%" alt="SliceCraft Interactive Website Demo" style="border-radius: 15px;">
 </kbd>
 
 <br><br>
